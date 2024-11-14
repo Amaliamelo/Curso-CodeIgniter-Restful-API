@@ -16,7 +16,7 @@ class CuentaModel extends Model
 
     protected $validationRules  = [
         'moneda'     => 'required|alpha_numeric_space|min_length[3]|max_length[75]',
-        'fondo'   => 'required|alpha_numeric_space|min_length[3]|max_length[75]',
+        'fondo'   => 'required|alpha_numeric_space|min_length[1]|max_length[75]',
         'cliente_id'   => 'required|alpha_numeric_space|min_length[1]|max_length[8]',
     ];
 
