@@ -17,6 +17,11 @@ $routes->group('api',['namespace' => 'App\Controllers\API'], function($routes){
     $routes->put('clientes/update/(:num)', 'Clientes::update/$1');
     $routes->delete('clientes/delete/(:num)', 'Clientes::delete/$1');
 
+    //http://localhost:8081/api/cuentas
+    $routes->get('cuentas', 'Cuentas::index');
+
+    $routes->post('cuentas/create', 'Cuentas::create');
+
 
 
 });
