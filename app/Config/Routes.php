@@ -25,21 +25,21 @@ $routes->group('api',['namespace' => 'App\Controllers\API'], function($routes){
     $routes->put('cuentas/update/(:num)', 'Cuentas::update/$1');
     $routes->delete('cuentas/delete/(:num)', 'Cuentas::delete/$1');
 
-    //http://localhost:8081/api/cuentas
-    $routes->get('TiposTransaccion', 'TiposTransaccion::index');
+    //http://localhost:8081/api/tipo_transaccion
+    $routes->get('tipo_transaccion', 'tipo_transaccion::index');
 
-    $routes->post('TiposTransaccion/create', 'TiposTransaccion::create');
-    $routes->get('TiposTransaccion/edit/(:num)', 'TiposTransaccion::edit/$1');
-    $routes->put('TiposTransaccion/update/(:num)', 'TiposTransaccion::update/$1');
-    $routes->delete('TiposTransaccion/delete/(:num)', 'TiposTransaccion::delete/$1');
+    $routes->post('tipo_transaccion/create', 'tipo_transaccion::create');
+    $routes->get('tipo_transaccion/edit/(:num)', 'tipo_transaccion::edit/$1');
+    $routes->put('tipo_transaccion/update/(:num)', 'tipo_transaccion::update/$1');
+    $routes->delete('tipo_transaccion/delete/(:num)', 'tipo_transaccion::delete/$1');
 
-    //http://localhost:8081/api/cuentas
-    $routes->get('Transacciones', 'Transacciones::index');
+    //http://localhost:8081/api/transaccion
+    $routes->get('transaccion', 'transaccion::index');
 
-    $routes->post('Transacciones/create', 'Transacciones::create');
-    $routes->get('Transacciones/edit/(:num)', 'Transacciones::edit/$1');
-    $routes->put('Transacciones/update/(:num)', 'Transacciones::update/$1');
-    $routes->delete('Transacciones/delete/(:num)', 'Transacciones::delete/$1');
+    $routes->post('transaccion/create', 'transaccion::create');
+    $routes->get('transaccion/edit/(:num)', 'transaccion::edit/$1');
+    $routes->put('transaccion/update/(:num)', 'transaccion::update/$1');
+    $routes->delete('transaccion/delete/(:num)', 'transaccion::delete/$1');
 
 
 

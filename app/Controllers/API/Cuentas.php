@@ -37,7 +37,7 @@ class Cuentas extends ResourceController
         try{
            
             if($id==null)
-                return $this -> failValidationErrors('No se ha ppasado un Id valido');
+                return $this -> failValidationErrors('No se ha pasado un Id valido');
 
             $cuenta = $this->model->find($id);
             if($cuenta == null)
